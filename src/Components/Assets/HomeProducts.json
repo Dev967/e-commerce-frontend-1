@@ -1,0 +1,38 @@
+ [
+    {
+        "category" : "SmartPhones",
+        "name": "Realme 2",
+        "price": 9999,
+        "color":["Blue","Black","Red"]
+    },
+    {
+        "category" : "SmartPhones",
+        "name": "Realme C2",
+        "price": 7999,
+        "color":["Blue","Black"]
+    },
+    {
+        "category": "SmartPhones",
+        "name": "Redmi 5A",
+        "price": 6999,
+        "color":["Gold","RoseGold","White"]
+    },
+    {
+        "category" : "SmartPhones",
+        "name": "Redmi Note4",
+        "price": 7999,
+        "color":["Gold","Black","RoseGold","White"]
+    },
+    {
+        "category" : "Men-Wear",
+        "name": "Ethnic Kurta",
+        "price": 499,
+        "color":["Blue","Violet","Red"]
+    },
+    {
+        "category" : "Men-Wear",
+        "name": "Jeans",
+        "price": 899,
+        "color":["Blue","Black"]
+    }
+]
