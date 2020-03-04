@@ -24,18 +24,18 @@ class MyNavbar extends React.Component{
 return(
     <Navbar bg="dark" expand="lg" variant="dark">
         <Navbar.Brand >
-        <NavLink to={navs[0].path} >Cart</NavLink>
+        <NavLink to={navs[0].path} >CART</NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-        {navs.map(e=> <NavLink className="mx-2 text-white" to={e.path}>{e.name}</NavLink>)}
+        {navs.map(e=> <NavLink key={e.id} className="mx-2 text-white" to={e.path}>{e.name}</NavLink>)}
         </Nav>
         </Navbar.Collapse>
     </Navbar>
 );
-    }
-}
+    }       
+        }
 
 class MainComponent extends React.Component{
     render(){

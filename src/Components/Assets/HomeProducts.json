@@ -1,38 +1,86 @@
  [
     {
-        "category" : "SmartPhones",
+        "category" : "SmartPhones All",
         "name": "Realme 2",
         "price": 9999,
-        "color":["Blue","Black","Red"]
+        "color":["Blue","Black","Red"],
+        "id" : 0
     },
     {
-        "category" : "SmartPhones",
+        "category" : "SmartPhones All",
         "name": "Realme C2",
         "price": 7999,
-        "color":["Blue","Black"]
+        "color":["Blue","Black"],
+        "id" : 1
     },
     {
-        "category": "SmartPhones",
+        "category": "SmartPhones All",
         "name": "Redmi 5A",
         "price": 6999,
-        "color":["Gold","RoseGold","White"]
+        "color":["Gold","RoseGold","White"],
+        "id" : 2
     },
     {
-        "category" : "SmartPhones",
+        "category" : "SmartPhones All",
         "name": "Redmi Note4",
         "price": 7999,
-        "color":["Gold","Black","RoseGold","White"]
+        "color":["Gold","Black","RoseGold","White"],
+        "id" : 3
     },
     {
-        "category" : "Men-Wear",
+        "category" : "Men-Wear All",
         "name": "Ethnic Kurta",
         "price": 499,
-        "color":["Blue","Violet","Red"]
+        "color":["Blue","Violet","Red"],
+        "id" : 4
     },
     {
-        "category" : "Men-Wear",
+        "category" : "Men-Wear All",
         "name": "Jeans",
         "price": 899,
-        "color":["Blue","Black"]
+        "color":["Blue","Black"],
+        "id" : 5
+    },
+    {
+        "category" : "Men-Wear All",
+        "name": "Shirt",
+        "price": 299,
+        "color":["Blue","Black","yellow","red","pink"],
+        "id" : 6
+    },
+    {
+        "category" : "Men-wear All",
+        "name": "Shoes",
+        "price": 999,
+        "color":["Brown","Black"],
+        "id" : 7
+    },
+    {
+        "category" : "Men-Wear All",
+        "name": "Sandlas",
+        "price": 499,
+        "color":["Black"],
+        "id" : 8
+    },
+    {
+        "category" : "Accesseries All",
+        "name": "Watch",
+        "price": 999,
+        "color":["Blue","Black","White"],
+        "id" : 9
+    },
+    {
+        "category" : "Accesseries All",
+        "name": "Gold-Necklace",
+        "price": 9999,
+        "color":["Gold"],
+        "id" : 10
+    },
+    {
+        "category" : "Men-Wear All",
+        "name" : "Leather-Jacket",
+        "price": 4999,
+        "color": ["Crimson-red","Dangling-Yellow"],
+        "id" : 11
     }
 ]
