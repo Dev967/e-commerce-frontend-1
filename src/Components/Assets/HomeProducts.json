@@ -4,83 +4,107 @@
         "name": "Realme 2",
         "price": 9999,
         "color":["Blue","Black","Red"],
-        "id" : 0
+        "id" : 0,
+        "img_src": "/Images/jason-leem-50bzI1F6urA-unsplash.jpg",
+        "in_cart": false
     },
     {
         "category" : "SmartPhones All",
         "name": "Realme C2",
         "price": 7999,
         "color":["Blue","Black"],
-        "id" : 1
+        "id" : 1,
+        "img_src": "/Images/anders-jilden-tcEGBIHm_6E-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category": "SmartPhones All",
         "name": "Redmi 5A",
         "price": 6999,
         "color":["Gold","RoseGold","White"],
-        "id" : 2
+        "id" : 2,
+        "img_src": "/Images/andy-fitzsimon-Ovjx9FsXX9c-unsplash.jpg",
+        "in_cart": false
     },
     {
         "category" : "SmartPhones All",
         "name": "Redmi Note4",
         "price": 7999,
         "color":["Gold","Black","RoseGold","White"],
-        "id" : 3
+        "id" : 3,
+        "img_src": "/Images/chris-lawton-5IHz5WhosQE-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category" : "Men-Wear All",
         "name": "Ethnic Kurta",
         "price": 499,
         "color":["Blue","Violet","Red"],
-        "id" : 4
+        "id" : 4,
+        "img_src": "/Images/clark-young-ueZXMrZFFKQ-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category" : "Men-Wear All",
         "name": "Jeans",
         "price": 899,
         "color":["Blue","Black"],
-        "id" : 5
+        "id" : 5,
+        "img_src": "/Images/david-vig-qwHHOC2z5Xs-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category" : "Men-Wear All",
         "name": "Shirt",
         "price": 299,
         "color":["Blue","Black","yellow","red","pink"],
-        "id" : 6
+        "id" : 6,
+        "img_src": "/Images/florian-van-duyn-Dm-qxdynoEc-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category" : "Men-wear All",
         "name": "Shoes",
         "price": 999,
         "color":["Brown","Black"],
-        "id" : 7
+        "id" : 7,
+        "img_src": "/Images/greg-rakozy-P7w9VrUo9vU-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category" : "Men-Wear All",
         "name": "Sandlas",
         "price": 499,
         "color":["Black"],
-        "id" : 8
+        "id" : 8,
+        "img_src": "/Images/harley-davidson-zGzXsJUBQfs-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category" : "Accesseries All",
         "name": "Watch",
         "price": 999,
         "color":["Blue","Black","White"],
-        "id" : 9
+        "id" : 9,
+        "img_src": "/Images/irina-iriser-mNz9Pa3tz34-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category" : "Accesseries All",
         "name": "Gold-Necklace",
         "price": 9999,
         "color":["Gold"],
-        "id" : 10
+        "id" : 10,
+        "img_src": "/Images/aleksandr-ledogorov-G-JJy-Yv_dA-unsplash.jpg",
+        "in_cart": false 
     },
     {
         "category" : "Men-Wear All",
         "name" : "Leather-Jacket",
         "price": 4999,
         "color": ["Crimson-red","Dangling-Yellow"],
-        "id" : 11
+        "id" : 11,
+        "img_src": "/Images/ivan-mani-QdwR5aRGkbs-unsplash.jpg",
+        "in_cart": false 
     }
 ]

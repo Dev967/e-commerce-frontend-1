@@ -11,12 +11,14 @@ import'./Assets/bootstrap-4.4.1-dist/css/bootstrap.min.css';
 
 //Components
 import Home from './Home';
-import Component2 from './Component2';
+import {Component2} from './Component2';
 import Component3 from './Component3';
 import ErrorMsg from './Error';
-
+import {Provider} from './Context';
 //Data
 import navs from './Assets/navItems';
+import ProductData from './Assets/HomeProducts';
+import Data from './Assets/HomeProducts';
 
 //Navbar
 class MyNavbar extends React.Component{
@@ -38,9 +40,23 @@ return(
         }
 
 class MainComponent extends React.Component{
+    constructor(){
+        super();
+       this.modify =  this.modify.bind(this);
+    }
+    state ={
+        data: [...Data]
+    }
+    modify(c){
+        this.setState({data : c})
+    }
     render(){
         return(
-            <BrowserRouter>
+           <Provider value={{
+               data: this.state.data,
+               modifyData : this.modify
+           }}>
+                <BrowserRouter>
             <div>
                 <MyNavbar />
                 <Switch>
@@ -51,6 +67,7 @@ class MainComponent extends React.Component{
                 </Switch>
             </div>
             </BrowserRouter>
+           </Provider>
         );
     }
 }
