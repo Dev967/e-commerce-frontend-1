@@ -4,7 +4,7 @@ import React from 'react';
 import {BrowserRouter, Route, NavLink, Switch} from 'react-router-dom';
 
 //react-bootstrap
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, Badge} from 'react-bootstrap';
 
 //bootstrap CSS
 import'./Assets/bootstrap-4.4.1-dist/css/bootstrap.min.css'; 
@@ -14,10 +14,9 @@ import Home from './Home';
 import {Component2} from './Component2';
 import Component3 from './Component3';
 import ErrorMsg from './Error';
-import {Provider} from './Context';
+import {Provider,Consumer} from './Context';
 //Data
 import navs from './Assets/navItems';
-import ProductData from './Assets/HomeProducts';
 import Data from './Assets/HomeProducts';
 
 //Navbar
@@ -32,6 +31,7 @@ return(
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
         {navs.map(e=> <NavLink key={e.id} className="mx-2 text-white" to={e.path}>{e.name}</NavLink>)}
+        <NavLink key="2" className="mx-2 text-white" to="/Component2">Cart<Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></NavLink>
         </Nav>
         </Navbar.Collapse>
     </Navbar>
@@ -45,10 +45,16 @@ class MainComponent extends React.Component{
        this.modify =  this.modify.bind(this);
     }
     state ={
-        data: [...Data]
+        data: [...Data],
+        count: 0
+    }
+    set_count(){
+        let noOfCount = this.state.data.filter(e=>{return e.in_cart});
+        this.setState({count: noOfCount.length});
     }
     modify(c){
-        this.setState({data : c})
+        this.setState({data : c});
+        this.set_count();
     }
     render(){
         return(
@@ -58,7 +64,7 @@ class MainComponent extends React.Component{
            }}>
                 <BrowserRouter>
             <div>
-                <MyNavbar />
+                <MyNavbar no={this.state.count}/>
                 <Switch>
                     <Route path="/" component={Home} exact/>
                     <Route path="/Component2" component={Component2} exact/>

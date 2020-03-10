@@ -14,8 +14,10 @@ import'./Assets/bootstrap-4.4.1-dist/css/bootstrap.min.css';
 import {Consumer} from './Context';
 
 class Product extends React.Component{
-    state = {
-        cart_state : "Add",
+    constructor(props){
+        super();
+        if(props.value.in_cart) this.state = {cart_state: "Remove"}
+        else this.state = {cart_state: "Add"}
     }
     update_cart_state(){
         let new_state;
@@ -53,7 +55,7 @@ class Product extends React.Component{
                   <Row className="mt-2">
                       <Col>
                       <Button variant="danger" className="mr-2">More</Button>
-                     <Button variant="info" onClick={()=> {this.props.callParent(this.props.value)}}>{this.state.cart_state}</Button>
+                     <Button variant="info" onClick={()=> {this.props.callParent(this.props.value); this.update_cart_state()}}>{this.state.cart_state}</Button>
                       </Col>
                   </Row>
                </Card.Body>
@@ -63,13 +65,6 @@ class Product extends React.Component{
     }
 }
 class Home extends React.Component{
-    filter(f){
-        let temp = Data.filter(g=> {
-           return(g.category.includes(f));
-        });
-
-        // ReactDOM.render(temp.map(e=> <Product key={e.id} value={e}/>), document.getElementById('Products'));
-    }
     render_products(x){
         const add_in_cart = (b)=>{
             let index = x.data.indexOf(b);
@@ -84,9 +79,6 @@ class Home extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <ButtonGroup className="my-4">
-                {Category.map(e=><Button key={e.id}onClick={()=>{this.filter(e.name);}} variant="outline-secondary" className="mr-2">{e.name}</Button>)}
-            </ButtonGroup>
             <Container fluid>
             <Row id="Products">
             <Consumer>

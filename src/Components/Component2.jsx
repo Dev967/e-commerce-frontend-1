@@ -1,7 +1,7 @@
 import React from 'react';
-import Data from './Assets/HomeProducts';
 import {Row,Col,Container} from 'react-bootstrap';
-
+import {Consumer} from './Context';
+  
 class Component2 extends React.Component{
     state = {
         in_cart_count : 0,
@@ -21,11 +21,18 @@ class Component2 extends React.Component{
     //                 );
     //         }
     //     }
+    showCart(a){
+        let tempArray = a.data.filter(b=>{return(b.in_cart)});
+        return tempArray.map(c=> <h4>{c.name}</h4>)
+    }
     render(){
 
         return(
-            <React.Fragment>
-            </React.Fragment>
+         <React.Fragment>
+                <Consumer>
+                {e => this.showCart(e)}
+                </Consumer>
+         </React.Fragment>
         );
     }
 }
