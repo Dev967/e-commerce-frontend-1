@@ -23,6 +23,7 @@ class Component2 extends React.Component{
     //     }
     showCart(a){
         let tempArray = a.data.filter(b=>{return(b.in_cart)});
+        
         return tempArray.map(c=> <h4>{c.name}</h4>)
     }
     render(){

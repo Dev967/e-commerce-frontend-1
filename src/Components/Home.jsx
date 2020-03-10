@@ -31,7 +31,7 @@ class Product extends React.Component{
     }
     render(){
         return(
-            <Col xs={3} className="mb-3">
+            <Col xs={3} className="mb-0 col-md-4">
             <Card className="shadow rounded">
             <Card.Img variant="top" src={this.props.value.img_src} />
             <Card.Title>{this.props.value.name}</Card.Title>
@@ -80,7 +80,7 @@ class Home extends React.Component{
         return(
             <React.Fragment>
             <Container fluid>
-            <Row id="Products">
+            <Row>
             <Consumer>
                 {e=> this.render_products(e)}
             </Consumer>
