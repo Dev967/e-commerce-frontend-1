@@ -1,12 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-//Data
-import Data from './Assets/HomeProducts';
-import Category from './Assets/Categories';
 
 //react-Bootstrap
-import {Card,Container,Row,Col,Button,Badge,ButtonGroup} from 'react-bootstrap';
+import {Card,Container,Row,Col,Button,Badge} from 'react-bootstrap';
 
 //bootstrap CSS
 import'./Assets/bootstrap-4.4.1-dist/css/bootstrap.min.css'; 

@@ -6,7 +6,8 @@
         "color":["Blue","Black","Red"],
         "id" : 0,
         "img_src": "/Images/jason-leem-50bzI1F6urA-unsplash.jpg",
-        "in_cart": false
+        "in_cart": false,
+        "amount": 1
     },
     {
         "category" : "SmartPhones All",
@@ -15,7 +16,9 @@
         "color":["Blue","Black"],
         "id" : 1,
         "img_src": "/Images/anders-jilden-tcEGBIHm_6E-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category": "SmartPhones All",
@@ -25,6 +28,8 @@
         "id" : 2,
         "img_src": "/Images/andy-fitzsimon-Ovjx9FsXX9c-unsplash.jpg",
         "in_cart": false
+,
+        "amount": 1
     },
     {
         "category" : "SmartPhones All",
@@ -33,7 +38,9 @@
         "color":["Gold","Black","RoseGold","White"],
         "id" : 3,
         "img_src": "/Images/chris-lawton-5IHz5WhosQE-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category" : "Men-Wear All",
@@ -42,7 +49,9 @@
         "color":["Blue","Violet","Red"],
         "id" : 4,
         "img_src": "/Images/clark-young-ueZXMrZFFKQ-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category" : "Men-Wear All",
@@ -51,7 +60,9 @@
         "color":["Blue","Black"],
         "id" : 5,
         "img_src": "/Images/david-vig-qwHHOC2z5Xs-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category" : "Men-Wear All",
@@ -60,7 +71,9 @@
         "color":["Blue","Black","yellow","red","pink"],
         "id" : 6,
         "img_src": "/Images/florian-van-duyn-Dm-qxdynoEc-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category" : "Men-wear All",
@@ -69,7 +82,9 @@
         "color":["Brown","Black"],
         "id" : 7,
         "img_src": "/Images/greg-rakozy-P7w9VrUo9vU-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category" : "Men-Wear All",
@@ -78,7 +93,9 @@
         "color":["Black"],
         "id" : 8,
         "img_src": "/Images/harley-davidson-zGzXsJUBQfs-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category" : "Accesseries All",
@@ -87,7 +104,9 @@
         "color":["Blue","Black","White"],
         "id" : 9,
         "img_src": "/Images/irina-iriser-mNz9Pa3tz34-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category" : "Accesseries All",
@@ -96,7 +115,9 @@
         "color":["Gold"],
         "id" : 10,
         "img_src": "/Images/aleksandr-ledogorov-G-JJy-Yv_dA-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     },
     {
         "category" : "Men-Wear All",
@@ -105,6 +126,8 @@
         "color": ["Crimson-red","Dangling-Yellow"],
         "id" : 11,
         "img_src": "/Images/ivan-mani-QdwR5aRGkbs-unsplash.jpg",
-        "in_cart": false 
+        "in_cart": false ,
+        "amount": 1
+
     }
 ]

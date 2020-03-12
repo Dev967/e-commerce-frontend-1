@@ -14,7 +14,7 @@ import Home from './Home';
 import {Component2} from './Component2';
 import Component3 from './Component3';
 import ErrorMsg from './Error';
-import {Provider,Consumer} from './Context';
+import {Provider} from './Context';
 //Data
 import navs from './Assets/navItems';
 import Data from './Assets/HomeProducts';
@@ -45,11 +45,13 @@ class MainComponent extends React.Component{
        this.modify =  this.modify.bind(this);
     }
     state ={
+        in_cart_data: [],
         data: [...Data],
         count: 0
     }
     set_count(){
         let noOfCount = this.state.data.filter(e=>{return e.in_cart});
+        this.setState({in_cart_data: [...noOfCount]});
         this.setState({count: noOfCount.length});
     }
     modify(c){
@@ -60,7 +62,9 @@ class MainComponent extends React.Component{
         return(
            <Provider value={{
                data: this.state.data,
-               modifyData : this.modify
+               modifyData : this.modify,
+               source_cart_count: this.state.count,
+               in_cart_data: this.state.in_cart_data
            }}>
                 <BrowserRouter>
             <div>
