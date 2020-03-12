@@ -11,7 +11,7 @@ class Component2 extends React.Component{
         let DummyArr = [...d.data];
         if(c === "i"){
         DummyArr[DummyArr.indexOf(i)].amount += 1;
-        } else if(c === "d"){
+        } else if(c === "d" && DummyArr[DummyArr.indexOf(i)].amount ===! 1){
         DummyArr[DummyArr.indexOf(i)].amount -= 1;
         }else if(c === "r"){
         DummyArr[DummyArr.indexOf(i)].in_cart = false;
