@@ -16,7 +16,7 @@
         "color":["Blue","Black"],
         "id" : 1,
         "img_src": "/Images/anders-jilden-tcEGBIHm_6E-unsplash.jpg",
-        "in_cart": false ,
+        "in_cart": false,
         "amount": 1
 
     },

@@ -11,17 +11,23 @@ class Component2 extends React.Component{
         let DummyArr = [...d.data];
         if(c === "i"){
         DummyArr[DummyArr.indexOf(i)].amount += 1;
-        } else if(c === "d" && DummyArr[DummyArr.indexOf(i)].amount ===! 1){
+        } else if(c === "d" && DummyArr[DummyArr.indexOf(i)].amount !== 1){
         DummyArr[DummyArr.indexOf(i)].amount -= 1;
         }else if(c === "r"){
         DummyArr[DummyArr.indexOf(i)].in_cart = false;
         }
         d.modifyData(DummyArr);
     }
+    removeAll(x){
+        let DummyData = [...x.data];
+        DummyData.forEach(e=>{e.in_cart = false;})
+        x.modifyData(DummyData);        
+    }
     showCart(a){
         if(a.in_cart_data[0]){
-                return a.in_cart_data.map(b =>
-                    <Col xs={4}>
+                return <Container fluid>
+                    <Row>{a.in_cart_data.map(b =>
+                    <Col xs="auto" lg="6" md="6" sm="auto">
                     <Card className="rounded shadow bg-dark text-white m-1">
                         <Card.Img src={b.img_src} />
                         <Card.ImgOverlay>
@@ -37,23 +43,31 @@ class Component2 extends React.Component{
                             <Badge className="float-right" variant="success">{b.amount}</Badge>
                             </Col>
                         </Row>
-                        <Row className="mt-2">
+                        <Row>
                         <Col>
-                            <Button className="" variant="primary" onClick={()=>{this.operate(a,b,"i")}}>+</Button>
-                            <Button className="mx-1" variant="primary" onClick={()=>{this.operate(a,b,"d")}}>-</Button>
+                            <Button className="mt-2" variant="primary" onClick={()=>{this.operate(a,b,"i")}}>+</Button>
+                            <Button className="mx-1 mt-2" variant="primary" onClick={()=>{this.operate(a,b,"d")}}>-</Button>
                         </Col>
                         </Row>
-                        <Row className="mt-2">
+                        <Row>
                             <Col>
-                            <Button variant="secondary" className="mr-4">Details</Button>
-                            <Button variant="danger" onClick={()=>{this.operate(a,b,"r")}} >Remove</Button>
+                            <Button variant="secondary" className="mr-4 mt-2">Details</Button>
+                            <Button variant="warning" className="mt-2" onClick={()=>{this.operate(a,b,"r")}} >Remove</Button>
                             </Col>
                         </Row>
                         </Card.Body>
                         </Card.ImgOverlay>
                     </Card>
                     </Col>
-                        )
+                        )}
+                    </Row>
+                    <Row className="mt-5">
+                        <Col>
+                            <Button variant="danger" onClick={()=>{this.removeAll(a)}}>Remove All</Button>
+                            <Button variant="success" className="float-right">Next</Button>
+                        </Col>
+                    </Row>
+                    </Container>
         } else {
             return(
                     <Col className="my-auto">
@@ -67,11 +81,9 @@ class Component2 extends React.Component{
         return(
          <React.Fragment>
               <Container>
-                  <Row className="h-100">
                   <Consumer>
                 {e => this.showCart(e)}
                 </Consumer>
-                  </Row>
               </Container>
          </React.Fragment>
         );
