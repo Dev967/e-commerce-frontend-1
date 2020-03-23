@@ -16,8 +16,10 @@ import Component3 from './Component3';
 import ErrorMsg from './Error';
 import {Provider} from './Context';
 //Data
-import navs from './Assets/navItems';
 import Data from './Assets/HomeProducts';
+//Fonts
+import 'font-awesome/css/font-awesome.min.css';
+
 
 //Navbar
 class MyNavbar extends React.Component{
@@ -25,13 +27,14 @@ class MyNavbar extends React.Component{
 return(
     <Navbar bg="dark" expand="lg" variant="dark">
         <Navbar.Brand >
-        <NavLink to={navs[0].path} >CART</NavLink>
+        <NavLink to="/"><span className="fa fa-shopping-cart fa-lg mr-1"></span></NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-        {navs.map(e=> <NavLink key={e.id} className="mx-2 text-white" to={e.path}>{e.name}</NavLink>)}
-        <NavLink key="2" className="mx-2 text-white" to="/Component2">Cart</NavLink>
+        <NavLink key="1" className="mx-2 text-white" to="/"><i className="fa fa-home fa-lg mr-1"></i>Home</NavLink>                               
+        <NavLink key="3" className="mx-2 text-white" to="/Component3"><i className="fa fa-info-circle fa-lg mr-1"></i>About</NavLink>
+        <NavLink key="2" className="mx-2 text-white" to="/Component2"><i className="fa fa-shopping-cart fa-lg mr-1"></i>Cart</NavLink>
         <h5><Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></h5>
         </Nav>
         </Navbar.Collapse>
