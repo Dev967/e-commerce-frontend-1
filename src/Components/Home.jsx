@@ -8,6 +8,7 @@ import'./Assets/bootstrap-4.4.1-dist/css/bootstrap.min.css';
 
 import {Consumer} from './Context';
 
+import categories from './Assets/Categories';
 class Product extends React.Component{
     constructor(props){
         super();
@@ -60,6 +61,9 @@ class Product extends React.Component{
     }
 }
 class Home extends React.Component{
+    state={
+        selected:"All"
+    }
     render_products(x){
         const add_in_cart = (b)=>{
             let index = x.data.indexOf(b);
@@ -69,12 +73,26 @@ class Home extends React.Component{
 
             x.modifyData(newArray);    
         }
-        return x.data.map(p => <Product callParent={add_in_cart} value={p} key={p.id} />)
+        let filteredData = x.data.filter(f=>{return f.filtered})
+        return filteredData.map(p => <Product callParent={add_in_cart} value={p} key={p.id} />)
     }
+    filter(d,categoryName){
+        this.setState({selected: categoryName});
+        let newData = [...d.data];
+        newData.forEach(e=> e.category.includes(categoryName)?e.filtered = true:e.filtered =false);
+        d.modifyData(newData);
+    }
+    render_buttons(y){
+        return categories.map(c=> <Button variant="outline-secondary" className="mx-3 mt-4" onClick={()=>this.filter(y,c.name)} active={c.name.includes(this.state.selected)}>{c.name}</Button>)    }
     render(){
         return(
             <React.Fragment>
             <Container fluid>
+            <Row className="mb-4">
+            <Consumer>
+            {e=> this.render_buttons(e)}
+            </Consumer>
+            </Row>
             <Row>
             <Consumer>
                 {e=> this.render_products(e)}
