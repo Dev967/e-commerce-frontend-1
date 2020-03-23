@@ -40,7 +40,7 @@ class Component2 extends React.Component{
                         <Row>
                             <Col>Quantity</Col>
                             <Col>
-                            <Badge className="float-right" variant="success">{b.amount}</Badge>
+                            <h4><Badge className="float-right" variant="success">{b.amount}</Badge></h4>
                             </Col>
                         </Row>
                         <Row>

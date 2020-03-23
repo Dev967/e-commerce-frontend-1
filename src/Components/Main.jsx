@@ -31,7 +31,8 @@ return(
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
         {navs.map(e=> <NavLink key={e.id} className="mx-2 text-white" to={e.path}>{e.name}</NavLink>)}
-        <NavLink key="2" className="mx-2 text-white" to="/Component2">Cart<Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></NavLink>
+        <NavLink key="2" className="mx-2 text-white" to="/Component2">Cart</NavLink>
+        <h5><Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></h5>
         </Nav>
         </Navbar.Collapse>
     </Navbar>
@@ -40,14 +41,16 @@ return(
         }
 
 class MainComponent extends React.Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
        this.modify =  this.modify.bind(this);
+       this.setSelected = this.setSelected.bind(this);
     }
     state ={
         in_cart_data: [],
         data: [...Data],
-        count: 0
+        count: 0,
+        selected: "All"
     }
     set_count(){
         let noOfCount = this.state.data.filter(e=>{return e.in_cart});
@@ -58,13 +61,18 @@ class MainComponent extends React.Component{
         this.setState({data : c});
         this.set_count();
     }
+    setSelected(s){
+        this.setState({selected: s});
+    }
     render(){
         return(
            <Provider value={{
                data: this.state.data,
                modifyData : this.modify,
                source_cart_count: this.state.count,
-               in_cart_data: this.state.in_cart_data
+               in_cart_data: this.state.in_cart_data,
+               selected: this.state.selected,
+               set_selected: this.setSelected
            }}>
                 <BrowserRouter>
             <div>

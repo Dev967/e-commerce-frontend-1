@@ -61,9 +61,6 @@ class Product extends React.Component{
     }
 }
 class Home extends React.Component{
-    state={
-        selected:"All"
-    }
     render_products(x){
         const add_in_cart = (b)=>{
             let index = x.data.indexOf(b);
@@ -77,13 +74,14 @@ class Home extends React.Component{
         return filteredData.map(p => <Product callParent={add_in_cart} value={p} key={p.id} />)
     }
     filter(d,categoryName){
-        this.setState({selected: categoryName});
+        d.set_selected(categoryName);
         let newData = [...d.data];
         newData.forEach(e=> e.category.includes(categoryName)?e.filtered = true:e.filtered =false);
         d.modifyData(newData);
     }
     render_buttons(y){
-        return categories.map(c=> <Button variant="outline-secondary" className="mx-3 mt-4" onClick={()=>this.filter(y,c.name)} active={c.name.includes(this.state.selected)}>{c.name}</Button>)    }
+        return categories.map(c=> <Button variant="outline-secondary" className="mx-3 mt-4" onClick={()=>this.filter(y,c.name)} active={c.name.includes(y.selected)}>{c.name}</Button>)   
+     }
     render(){
         return(
             <React.Fragment>
