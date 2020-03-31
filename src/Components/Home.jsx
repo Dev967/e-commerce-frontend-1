@@ -1,7 +1,7 @@
 import React from 'react';
 
 //react-Bootstrap
-import {Card,Container,Row,Col,Button,Badge,Modal,Toast} from 'react-bootstrap';
+import {Card,Container,Row,Col,Button,Badge,Modal,Spinner} from 'react-bootstrap';
 
 //bootstrap CSS
 import'./Assets/bootstrap-4.4.1-dist/css/bootstrap.min.css'; 
@@ -52,13 +52,24 @@ class Product extends React.Component{
     }
     state ={
         modal_show: false,
+        loader:true
     }
 
     modalSetShow = () => this.setState({modal_show:true});
     modalSetHide = () => this.setState({modal_show:false});
     
     updateUpdateCartState = () => this.update_cart_state();
-
+    handleImage = () => this.setState({loader:false});
+    handleLoader = () => {
+        if(this.state.loader == ""){
+            return 
+            <Spinner animation="border" role="status" >
+            <span className="sr-only">Loading...</span>
+            </Spinner>
+        }else {
+            return null;
+        }
+    }
     update_cart_state(){
         let new_state;
         if(this.props.value.in_cart){
@@ -73,7 +84,8 @@ class Product extends React.Component{
         return(
             <Col lg={3} md="auto" sm="6" xs="auto" className="mb-0 col-md-4">
             <Card className="shadow rounded">
-            <Card.Img variant="top" src={this.props.value.img_src} />
+            <Card.Img variant="top" onLoad={this.handleImage} src={this.props.value.img_src} />
+            {this.handleLoader}
             <Card.Title>{this.props.value.name}</Card.Title>
                <Card.Body>
                <Row>

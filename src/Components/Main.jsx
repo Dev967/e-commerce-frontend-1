@@ -35,7 +35,7 @@ return(
         <NavLink key="1" className="mx-2 text-white" to="/"><i className="fa fa-home fa-lg mr-1"></i>Home</NavLink>                               
         <NavLink key="3" className="mx-2 text-white" to="/Component3"><i className="fa fa-info-circle fa-lg mr-1"></i>About</NavLink>
         <NavLink key="2" className="mx-2 text-white" to="/Component2"><i className="fa fa-shopping-cart fa-lg mr-1"></i>Cart</NavLink>
-        <h5><Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></h5>
+        <h5><Badge variant="danger" className="ml-0 text-center">{this.props.no}</Badge></h5>   
         </Nav>
         </Navbar.Collapse>
     </Navbar>
