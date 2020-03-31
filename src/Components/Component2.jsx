@@ -51,7 +51,7 @@ class Component2 extends React.Component{
                         </Row>
                         <Row>
                             <Col>
-                            <Button variant="secondary" className="mr-4 mt-2"><i className="fa fa-info-circle fa-large mr-1"></i>Details</Button>
+                            <Button variant="secondary" className="mr-4 mt-2">Details</Button>
                             <Button variant="warning" className="mt-2" onClick={()=>{this.operate(a,b,"r")}} >Remove</Button>
                             </Col>
                         </Row>

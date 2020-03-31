@@ -16,10 +16,8 @@ import Component3 from './Component3';
 import ErrorMsg from './Error';
 import {Provider} from './Context';
 //Data
+import navs from './Assets/navItems';
 import Data from './Assets/HomeProducts';
-//Fonts
-import 'font-awesome/css/font-awesome.min.css';
-
 
 //Navbar
 class MyNavbar extends React.Component{
@@ -27,7 +25,7 @@ class MyNavbar extends React.Component{
 return(
     <Navbar bg="dark" expand="lg" variant="dark">
         <Navbar.Brand >
-        <NavLink to="/"><span className="fa fa-shopping-cart fa-lg mr-1"></span></NavLink>
+        <NavLink to={navs[0].path} >CART</NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
