@@ -9,7 +9,27 @@
         "in_cart": false,
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": [
+            {
+                "name": "John doe",
+                "review": "Bad product! don't buy it. Waste of money",
+                "date": "18-11-2002",
+                "rating":2
+            },
+            {
+                "name": "Jane doe",
+                "review": "Nice product! #Satisfied",
+                "date": "23-4-1994",
+                "rating": 5
+            },
+            {
+                "name" : "Grandpa max",
+                "review" : "This is not a real omintrix!",
+                "date": "1-1-1994",
+                "rating": 1
+            }
+        ]
     },
     {
         "category" : "SmartPhones All",
@@ -21,7 +41,27 @@
         "in_cart": false,
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": [
+            {
+                "name": "John doe",
+                "review": "Bad product! don't buy it. Waste of money",
+                "date": "18-11-2002",
+                "rating":2
+            },
+            {
+                "name": "Jane doe",
+                "review": "Nice product! #Satisfied",
+                "date": "23-4-1994",
+                "rating": 5
+            },
+            {
+                "name" : "Grandpa max",
+                "review" : "This is not a real omintrix!",
+                "date": "1-1-1994",
+                "rating": 1
+            }
+        ]
 
     },
     {
@@ -34,7 +74,27 @@
         "in_cart": false,
         "filtered": true,        
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": [
+            {
+                "name": "John doe",
+                "review": "Bad product! don't buy it. Waste of money",
+                "date": "18-11-2002",
+                "rating":2
+            },
+            {
+                "name": "Jane doe",
+                "review": "Nice product! #Satisfied",
+                "date": "23-4-1994",
+                "rating": 5
+            },
+            {
+                "name" : "Grandpa max",
+                "review" : "This is not a real omintrix!",
+                "date": "1-1-1994",
+                "rating": 1
+            }
+        ]
     },
     {
         "category" : "SmartPhones All",
@@ -46,7 +106,27 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": [
+            {
+                "name": "John doe",
+                "review": "Bad product! don't buy it. Waste of money",
+                "date": "18-11-2002",
+                "rating":2
+            },
+            {
+                "name": "Jane doe",
+                "review": "Nice product! #Satisfied",
+                "date": "23-4-1994",
+                "rating": 5
+            },
+            {
+                "name" : "Grandpa max",
+                "review" : "This is not a real omintrix!",
+                "date": "1-1-1994",
+                "rating": 1
+            }
+        ]
 
     },
     {
@@ -59,7 +139,27 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": [
+            {
+                "name": "John doe",
+                "review": "Bad product! don't buy it. Waste of money",
+                "date": "18-11-2002",
+                "rating":2
+            },
+            {
+                "name": "Jane doe",
+                "review": "Nice product! #Satisfied",
+                "date": "23-4-1994",
+                "rating": 5
+            },
+            {
+                "name" : "Grandpa max",
+                "review" : "This is not a real omintrix!",
+                "date": "1-1-1994",
+                "rating": 1
+            }
+        ]
 
     },
     {
@@ -72,7 +172,27 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": [
+            {
+                "name": "John doe",
+                "review": "Bad product! don't buy it. Waste of money",
+                "date": "18-11-2002",
+                "rating":2
+            },
+            {
+                "name": "Jane doe",
+                "review": "Nice product! #Satisfied",
+                "date": "23-4-1994",
+                "rating": 5
+            },
+            {
+                "name" : "Grandpa max",
+                "review" : "This is not a real omintrix!",
+                "date": "1-1-1994",
+                "rating": 1
+            }
+        ]
 
     },
     {
@@ -85,7 +205,27 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": [
+            {
+                "name": "John doe",
+                "review": "Bad product! don't buy it. Waste of money",
+                "date": "18-11-2002",
+                "rating":2
+            },
+            {
+                "name": "Jane doe",
+                "review": "Nice product! #Satisfied",
+                "date": "23-4-1994",
+                "rating": 5
+            },
+            {
+                "name" : "Grandpa max",
+                "review" : "This is not a real omintrix!",
+                "date": "1-1-1994",
+                "rating": 1
+            }
+        ]
 
     },
     {
@@ -98,7 +238,27 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": [
+            {
+                "name": "John doe",
+                "review": "Bad product! don't buy it. Waste of money",
+                "date": "18-11-2002",
+                "rating":2
+            },
+            {
+                "name": "Jane doe",
+                "review": "Nice product! #Satisfied",
+                "date": "23-4-1994",
+                "rating": 5
+            },
+            {
+                "name" : "Grandpa max",
+                "review" : "This is not a real omintrix!",
+                "date": "1-1-1994",
+                "rating": 1
+            }
+        ]
 
     },
     {
@@ -111,7 +271,8 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": []
 
     },
     {
@@ -124,7 +285,8 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": []
 
     },
     {
@@ -137,7 +299,8 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": []
 
     },
     {
@@ -150,7 +313,8 @@
         "in_cart": false, 
         "filtered": true,
         "amount": 1,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
+        "Review": []
 
     }
 ]

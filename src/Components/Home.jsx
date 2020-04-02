@@ -10,6 +10,36 @@ import {Consumer} from './Context';
 
 import categories from './Assets/Categories';
 
+const ReviewComponent = (props) => {
+    let printArr = [false,false,false,false,false];
+    let rating = props.Reviews.rating;
+    printArr = printArr.map(e => {
+        if(rating != 0){
+            rating --;
+            console.log(rating);
+            return true;
+        }else return false;
+    })
+    return(
+        <React.Fragment>
+            <Row>
+                <Col>
+                    <h4>{props.Reviews.name}</h4>
+                </Col>
+                <Col>
+                    <div className="float-right">{props.Reviews.date}</div>
+                </Col>
+            </Row>
+            {
+                printArr.map(e=>{
+                    if(e) return <i className="fa fa-lg fa-star mb-2 mr -1" />
+                    else return <i className = "fa fa-lg fa-star-o mb-2 mr-1" />
+                })
+            }
+            <p>{props.Reviews.review}</p>
+        </React.Fragment>
+    );
+}
 const MyModal = (props) =>{
     return (
         <Modal
@@ -29,6 +59,11 @@ const MyModal = (props) =>{
             <p>
               {props.contentAll.value.desc}
             </p>
+
+            <h1>Reviews: </h1>
+            {props.Reviews.map(e=>{
+               return <ReviewComponent Reviews={e} />
+            })}
           </Modal.Body>
           <Modal.Footer>
             <Row>
@@ -69,6 +104,27 @@ class Product extends React.Component{
             this.setState({cart_state: new_state})
         }
     }
+    rating(){
+        let printAr = [false,false,false,false,false];
+        let rating =0;
+        this.props.value.Review.forEach(e => {rating += e.rating});
+            rating /= this.props.value.Review.length;
+            rating = Math.round(rating);
+            if(Number.isInteger(rating)){
+                printAr = printAr.map(e =>{
+                    if(rating != 0){
+                       rating--;
+                       return(true);
+                   } else{
+                       return(false);
+                   }
+               })
+        }
+            return printAr.map(e => {
+                if(e) return <i className = "fa fa-star fa-lg mr-1 mb-2" />
+                else return <i className = "fa fa-star-o fa-lg mr-1 mb-2" />
+            })
+    }
     render(){
         return(
             <Col lg={3} md="auto" sm="6" xs="auto" className="mb-0 col-md-4">
@@ -87,6 +143,7 @@ class Product extends React.Component{
                    </h5>
                    </Col>
                </Row>
+                   {this.rating()}
                <h5>Available Colors:</h5> 
                {this.props.value.color.map(f=>
                    <Badge variant="success" className="mr-2">
@@ -101,7 +158,7 @@ class Product extends React.Component{
                   </Row>
                </Card.Body>
            </Card>
-           <MyModal contentShow={this.state.modal_show} contentOnHide={this.modalSetHide} contentAll={this.props} inCart={this.state.cart_state} onUpdateCartState={this.updateUpdateCartState} />
+           <MyModal contentShow={this.state.modal_show} contentOnHide={this.modalSetHide} contentAll={this.props} inCart={this.state.cart_state} onUpdateCartState={this.updateUpdateCartState} Reviews={this.props.value.Review} />
            </Col>
         );
     }
