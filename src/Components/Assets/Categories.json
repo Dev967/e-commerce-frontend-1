@@ -1,18 +1,39 @@
 [
     {
-        "name" : "Men-Wear",
+        "name" : "Trees",
         "id": 0
     },
     {
-        "name": "Accesseries",
+        "name": "Desert",
         "id": 1
     },
     {
-        "name": "SmartPhones",
+        "name": "City",
         "id": 2
     },
     {
-        "name": "All",
+        "name": "Road",
         "id": 3
+    },
+    {
+        "name": "Bridge",
+        "id": 4
+    },
+    {
+        "name": "Robots",
+        "id": 5
+    },
+    {
+        "name": "Cars",
+        "id" : 7
+    },
+    {
+        "name" : "Cafe",
+        "id": 8
+    },
+    {
+        "name": "All",
+        "id":6
     }
+ 
 ]

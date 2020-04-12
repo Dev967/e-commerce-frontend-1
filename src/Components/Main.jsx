@@ -27,11 +27,11 @@ import 'font-awesome/css/font-awesome.min.css';
 class MyNavbar extends React.Component{
     render(){
 return(
-    <Navbar bg="dark" expand="lg" variant="dark" fixed="top" className="shadow">
+    <Navbar className="my-navbar" bg="dark" expand="lg" variant="dark" fixed="top" className="shadow">
         <Navbar.Brand >
         <NavLink to="/Component2">
             <Row>
-            <i className="fa fa-shopping-cart fa-lg mr-1" /><h5 className="count"><Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></h5>
+            <i className="fa fa-shopping-cart fa-lg mr-1 grey" /><h5 className="count"><Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></h5>
             </Row>
         </NavLink>
         </Navbar.Brand>

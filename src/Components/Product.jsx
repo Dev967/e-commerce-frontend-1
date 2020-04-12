@@ -17,7 +17,9 @@ export class Product extends React.Component{
         if(this.state.cart_state === "Add") this.props.handleToast();
     }
 
-    modalSetShow = () => this.setState({modal_show:true});
+    modalSetShow = () => {
+        console.log(this.state);
+        this.setState({modal_show:true});}
     modalSetHide = () => this.setState({modal_show:false});
     
     updateUpdateCartState = () => this.update_cart_state();
@@ -60,21 +62,21 @@ export class Product extends React.Component{
             <Col lg={3} md="auto" sm="6" xs="auto" className="mb-0 col-md-4">
             <Card className="shadow rounded">
             <Card.Img variant="top" src={this.props.value.img_src} />
-            <Card.Title>{this.props.value.name}</Card.Title>
+            <Card.Title className="pl-3 pt-2">{this.props.value.name}</Card.Title>
                <Card.Body>
                <Row>
                    <Col><h5>Price: </h5></Col>
                    <Col>
                    <h5>
                    <Badge className="float-right" variant="warning">
-                   <span className="fa fa-tag fa-large mr-1"></span>
+                   <span className="fa fa-tag fa-large mr-1"></span>$
                    {this.props.value.price}
                    </Badge>
                    </h5>
                    </Col>
                </Row>
                    {this.rating()}
-               <h5>Available Colors:</h5> 
+               <h5>Tags:</h5> 
                {this.props.value.color.map(f=>
                    <Badge variant="success" className="mr-2">
                        {f}

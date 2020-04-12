@@ -4,7 +4,9 @@
         height: 50px;
     }
 }
-
+.home-container{
+    background-color:rgb(243, 243, 243);
+}
 .empty-rated{
     color: rgb(255, 196, 0);
 }

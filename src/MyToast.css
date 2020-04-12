@@ -4,3 +4,17 @@
     bottom: 2rem;
     z-index: 10;
 }
+
+.this{
+    background-color: rgb(104, 95, 95);
+}
+
+.this a{
+    color: white;
+    text-decoration: none;
+}
+
+.this a:hover{
+    text-decoration: none;
+    color: white;
+}

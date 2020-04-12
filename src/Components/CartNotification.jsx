@@ -15,7 +15,7 @@ export const MyToast = (props) => {
                     Your produts has been added to cart
                     </h5>
                 </strong>
-                <Button variant="secondary"><Link to="/Component2">Cart</Link></Button>
+                <Button className="this" variant="secondary"><Link to="/Component2">Cart</Link></Button>
             </Toast.Body>
         </Toast>
         </div>

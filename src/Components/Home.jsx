@@ -42,6 +42,7 @@ class Home extends React.Component{
             x.modifyData(newArray);    
         }
         let filteredData = x.data.filter(f=>{return f.filtered})
+        console.log(filteredData);
         return filteredData.map(p => <Product callParent={add_in_cart} value={p} key={p.id} handleToast={this.handleToast} />)
     }
     filter(d,categoryName){
@@ -56,7 +57,7 @@ class Home extends React.Component{
     render(){
         return(
             <React.Fragment>
-            <Container fluid>
+            <Container className="home-container" fluid>
             <Row className="mb-4">
             <Consumer>
             {e=> this.render_buttons(e)}

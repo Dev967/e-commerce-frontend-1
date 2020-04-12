@@ -16,6 +16,7 @@ export const MyModal = (props) =>{
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
               {props.contentAll.value.name}
+              <h6>- {props.contentAll.value.photographer}</h6>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>

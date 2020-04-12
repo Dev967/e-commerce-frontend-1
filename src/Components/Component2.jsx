@@ -34,22 +34,10 @@ class Component2 extends React.Component{
                         <Card.ImgOverlay>
                         <Card.Title><Col>
                         {b.name} 
-                        <Badge variant="warning" className="float-right">{b.price}</Badge>
+                        <Badge variant="warning" className="float-right">${b.price}</Badge>
                         </Col>
                         </Card.Title>
                         <Card.Body>
-                        <Row>
-                            <Col>Quantity</Col>
-                            <Col>
-                            <h4><Badge className="float-right" variant="success">{b.amount}</Badge></h4>
-                            </Col>
-                        </Row>
-                        <Row>
-                        <Col>
-                            <Button className="mt-2" variant="primary" onClick={()=>{this.operate(a,b,"i")}}>+</Button>
-                            <Button className="mx-1 mt-2" variant="primary" onClick={()=>{this.operate(a,b,"d")}}>-</Button>
-                        </Col>
-                        </Row>
                         <Row>
                             <Col>
                             <Button variant="secondary" className="mr-4 mt-2"><i className="fa fa-info-circle fa-large mr-1"></i>Details</Button>
@@ -73,7 +61,7 @@ class Component2 extends React.Component{
             return(
                     <Col className="my-auto">
                     <h3 className="display-3">Nothing in cart....</h3>
-                    <Button className="text-white btn-large" variant="danger"><NavLink to="/">Add Products</NavLink></Button>
+                    <Button className="text-white btn-large this2" variant="danger"><NavLink to="/">Add Products</NavLink></Button>
                     </Col>
             )
         }
