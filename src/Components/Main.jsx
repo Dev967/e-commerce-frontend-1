@@ -4,10 +4,12 @@ import React from 'react';
 import {BrowserRouter, Route, NavLink, Switch} from 'react-router-dom';
 
 //react-bootstrap
-import {Navbar, Nav, Badge} from 'react-bootstrap';
+import {Navbar, Nav, Badge, Row} from 'react-bootstrap';
 
 //bootstrap CSS
 import'./Assets/bootstrap-4.4.1-dist/css/bootstrap.min.css'; 
+//My CSS
+import '../Main.css';
 
 //Components
 import Home from './Home';
@@ -23,9 +25,13 @@ import Data from './Assets/HomeProducts';
 class MyNavbar extends React.Component{
     render(){
 return(
-    <Navbar bg="dark" expand="lg" variant="dark">
+    <Navbar className="my-navbar" bg="dark" expand="lg" variant="dark" fixed="top" className="shadow">
         <Navbar.Brand >
-        <NavLink to={navs[0].path} >CART</NavLink>
+        <NavLink to="/Component2">
+            <Row>
+            <i className="fa fa-shopping-cart fa-lg mr-1 grey" /><h5 className="count"><Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></h5>
+            </Row>
+        </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -33,7 +39,6 @@ return(
         <NavLink key="1" className="mx-2 text-white" to="/"><i className="fa fa-home fa-lg mr-1"></i>Home</NavLink>                               
         <NavLink key="3" className="mx-2 text-white" to="/Component3"><i className="fa fa-info-circle fa-lg mr-1"></i>About</NavLink>
         <NavLink key="2" className="mx-2 text-white" to="/Component2"><i className="fa fa-shopping-cart fa-lg mr-1"></i>Cart</NavLink>
-        <h5><Badge variant="danger" className="ml-0 text-center">{this.props.no}</Badge></h5>   
         </Nav>
         </Navbar.Collapse>
     </Navbar>
