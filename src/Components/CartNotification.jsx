@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 import "../MyToast.css";
 
 export const MyToast = (props) => {
-    console.log(props);
     return(
         <div>
             <Toast show={props.show} onClose={props.onClose} className="shadow-lg rounded">

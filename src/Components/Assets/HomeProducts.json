@@ -1,320 +1,382 @@
- [
-    {
-        "category" : "Trees All",
-        "name": "are covered green leaf plants",
-        "price": 5,
-        "photographer": "Chris Abney",
-        "color":["Trees","forest","jungle"],
-        "id" : 0,
-        "img_src": "/Images/chris-abney-qLW70Aoo8BE-unsplash.jpg",
-        "in_cart": false,
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": [
-            {
-                "name": "John doe",
-                "review": "Bad quality! don't buy it. Waste of money",
-                "date": "18-11-2002",
-                "rating":2
-            },
-            {
-                "name": "Jane doe",
-                "review": "Nice! #Satisfied",
-                "date": "23-4-1994",
-                "rating": 5
-            },
-            {
-                "name" : "Grandpa max",
-                "review" : "This is not a real omintrix!",
-                "date": "1-1-1994",
-                "rating": 1
-            }
+{
+    "MainData":  [
+        {
+            "category" : "Trees All",
+            "name": "are covered green leaf plants",
+            "price": 5,
+            "photographer": "Chris Abney",
+            "color":["Trees","forest","jungle"],
+            "id" : 0,
+            "img_src": "/Images/chris-abney-qLW70Aoo8BE-unsplash.jpg",
+            "in_cart": false,
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        },
+        {
+            "category" : "Desert All",
+            "name": "Desert dunes",
+            "price": 8,
+            "photographer": "keith Hardy",
+            "color":["Desert","dunes", "open sky","blue sky Desert"],
+            "id" : 1,
+            "img_src": "/Images/keith-hardy-PP8Escz15d8-unsplash.jpg",
+            "in_cart": false,
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"     
+    
+        },
+        {
+            "category": "Road Trees All",
+            "name": "asphalt Road",
+            "price": 8,
+            "photographer": "Matt Duncan",
+            "color":["Road","Trees","Nature"],
+            "id" : 2,
+            "img_src": "/Images/matt-duncan-IUY_3DvM__w-unsplash.jpg",
+            "in_cart": false,
+            "filtered": true,        
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+        },
+        {
+            "category" : "Bridge Trees All",
+            "name": "aerial view of concrete Roads",
+            "price": 5,
+            "photographer": "Denys Nevozhai",
+            "color":["Bridge","Cars","Aerial view","City"],
+            "id" : 3,
+            "img_src": "/Images/denys-nevozhai-7nrsVjvALnA-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"     
+    
+        },
+        {
+            "category" : "City All",
+            "name": "Aerial view of City",
+            "price": 9,
+            "photographer": "Astemir Almov",
+            "color":["City","aerial photography"],
+            "id" : 4,
+            "img_src": "/Images/astemir-almov--kgrPSetNW8-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"     
+    
+        },
+        {
+            "category" : "City All",
+            "name": "City beside water",
+            "price": 9,
+            "photographer": "Jonathan Roger",
+            "color":["City","town beside water", "ocean"],
+            "id" : 5,
+            "img_src": "/Images/jonathan-roger-LY1eyQMFeyo-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"     
+    
+        },
+        {
+            "category" : "Cars All",
+            "name": "Yellow and black coupe",
+            "price": 4,
+            "photographer": "john Matychuk",
+            "color":["Super cars","McLaren","cars"],
+            "id" : 6,
+            "img_src": "/Images/john-matychuk-FgTcokJpm9w-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"     
+    
+        },
+        {
+            "category" : "Robots All",
+            "name": "Wall-e",
+            "price": 9,
+            "photographer": "Dominik Scythe",
+            "color":["Wall-e","Robots","Toys","models"],
+            "id" : 7,
+            "img_src": "/Images/dominik-scythe-Sot0f3hQQ4Y-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"     
+    
+        },
+        {
+            "category" : "Robots All",
+            "name": "Asimo robot",
+            "price": 4,
+            "photographer": "Franck",
+            "color":["Robots","Asimo robot"],
+            "id" : 8,
+            "img_src": "/Images/franck-v-g29arbbvPjo-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+    
+        },
+        {
+            "category" : "Cafe All",
+            "name": "Cafe with brown chairs",
+            "price": 9,
+            "photographer": "Drew coffman",
+            "color":["cafe"],
+            "id" : 9,
+            "img_src": "/Images/drew-coffman-jUOaONoXJQk-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+    
+        },
+        {
+            "category" : "City All",
+            "name": "Empire state building",
+            "price": 9,
+            "photographer": "Alina Grubnyak",
+            "color":["City","Empire state building","evening","City-evening"],
+            "id" : 10,
+            "img_src": "/Images/alina-grubnyak-OzIk9PW0g50-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+    
+        },
+      {
+            "category" : "City All",
+            "name" : "Seattle at night",
+            "price": 4,
+            "photographer": "David Kokainis",
+            "color": ["night photography","Cityscape","seattle in rain","Seattle","favourite place"],
+            "id" : 11,
+            "img_src": "/Images/davids-kokainis-0S752AxAc4E-unsplash.jpg",
+            "in_cart": false, 
+            "filtered": true,
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?"
+    
+        }
+    ],
+    
+        "Reviews":[
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [ 
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ],
+            [
+                {
+                    "name": "John doe",
+                    "review": "Bad quality! don't buy it. Waste of money",
+                    "date": "18-11-2002",
+                    "rating":2
+                },
+                {
+                    "name": "Jane doe",
+                    "review": "Nice! #Satisfied",
+                    "date": "23-4-1994",
+                    "rating": 5
+                },
+                {
+                    "name" : "Grandpa max",
+                    "review" : "This is not a real omintrix!",
+                    "date": "1-1-1994",
+                    "rating": 1
+                }
+            ]
         ]
-    },
-    {
-        "category" : "Desert All",
-        "name": "Desert dunes",
-        "price": 8,
-        "photographer": "keith Hardy",
-        "color":["Desert","dunes", "open sky","blue sky Desert"],
-        "id" : 1,
-        "img_src": "/Images/keith-hardy-PP8Escz15d8-unsplash.jpg",
-        "in_cart": false,
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": [
-            {
-                "name": "John doe",
-                "review": "Bad image! don't buy it. Waste of money",
-                "date": "18-11-2002",
-                "rating":2
-            },
-            {
-                "name": "Jane doe",
-                "review": "Nice ! #Satisfied",
-                "date": "23-4-1994",
-                "rating": 5
-            },
-            {
-                "name" : "Grandpa max",
-                "review" : "This is not a real omintrix!",
-                "date": "1-1-1994",
-                "rating": 1
-            }
-        ]
-
-    },
-    {
-        "category": "Road Trees All",
-        "name": "asphalt Road",
-        "price": 8,
-        "photographer": "Matt Duncan",
-        "color":["Road","Trees","Nature"],
-        "id" : 2,
-        "img_src": "/Images/matt-duncan-IUY_3DvM__w-unsplash.jpg",
-        "in_cart": false,
-        "filtered": true,        
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": [
-            {
-                "name": "John doe",
-                "review": "Bad image! don't buy it. Waste of money",
-                "date": "18-11-2002",
-                "rating":2
-            },
-            {
-                "name": "Jane doe",
-                "review": "Nice image! #Satisfied",
-                "date": "23-4-1994",
-                "rating": 5
-            },
-            {
-                "name" : "Grandpa max",
-                "review" : "This is not a real omintrix!",
-                "date": "1-1-1994",
-                "rating": 1
-            }
-        ]
-    },
-    {
-        "category" : "Bridge Trees All",
-        "name": "aerial view of concrete Roads",
-        "price": 5,
-        "photographer": "Denys Nevozhai",
-        "color":["Bridge","Cars","Aerial view","City"],
-        "id" : 3,
-        "img_src": "/Images/denys-nevozhai-7nrsVjvALnA-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": [
-            {
-                "name": "John doe",
-                "review": "Bad image! don't buy it. Waste of money",
-                "date": "18-11-2002",
-                "rating":2
-            },
-            {
-                "name": "Jane doe",
-                "review": "Nice image! #Satisfied",
-                "date": "23-4-1994",
-                "rating": 5
-            },
-            {
-                "name" : "Grandpa max",
-                "review" : "This is not a real omintrix!",
-                "date": "1-1-1994",
-                "rating": 1
-            }
-        ]
-
-    },
-    {
-        "category" : "City All",
-        "name": "Aerial view of City",
-        "price": 9,
-        "photographer": "Astemir Almov",
-        "color":["City","aerial photography"],
-        "id" : 4,
-        "img_src": "/Images/astemir-almov--kgrPSetNW8-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": [
-            {
-                "name": "John doe",
-                "review": "Bad image! don't buy it. Waste of money",
-                "date": "18-11-2002",
-                "rating":2
-            },
-            {
-                "name": "Jane doe",
-                "review": "Nice image! #Satisfied",
-                "date": "23-4-1994",
-                "rating": 5
-            },
-            {
-                "name" : "Grandpa max",
-                "review" : "This is not a real omintrix!",
-                "date": "1-1-1994",
-                "rating": 1
-            }
-        ]
-
-    },
-    {
-        "category" : "City All",
-        "name": "City beside water",
-        "price": 9,
-        "photographer": "Jonathan Roger",
-        "color":["City","town beside water", "ocean"],
-        "id" : 5,
-        "img_src": "/Images/jonathan-roger-LY1eyQMFeyo-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": [
-            {
-                "name": "John doe",
-                "review": "Bad image! don't buy it. Waste of money",
-                "date": "18-11-2002",
-                "rating":2
-            },
-            {
-                "name": "Jane doe",
-                "review": "Nice image! #Satisfied",
-                "date": "23-4-1994",
-                "rating": 5
-            },
-            {
-                "name" : "Grandpa max",
-                "review" : "This is not a real omintrix!",
-                "date": "1-1-1994",
-                "rating": 1
-            }
-        ]
-
-    },
-    {
-        "category" : "Cars All",
-        "name": "Yellow and black coupe",
-        "price": 4,
-        "photographer": "john Matychuk",
-        "color":["Super cars","McLaren","cars"],
-        "id" : 6,
-        "img_src": "/Images/john-matychuk-FgTcokJpm9w-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": [
-            {
-                "name": "John doe",
-                "review": "Bad image! don't buy it. Waste of money",
-                "date": "18-11-2002",
-                "rating":2
-            },
-            {
-                "name": "Jane doe",
-                "review": "Nice image! #Satisfied",
-                "date": "23-4-1994",
-                "rating": 5
-            },
-            {
-                "name" : "Grandpa max",
-                "review" : "This is not a real omintrix!",
-                "date": "1-1-1994",
-                "rating": 1
-            }
-        ]
-
-    },
-    {
-        "category" : "Robots All",
-        "name": "Wall-e",
-        "price": 9,
-        "photographer": "Dominik Scythe",
-        "color":["Wall-e","Robots","Toys","models"],
-        "id" : 7,
-        "img_src": "/Images/dominik-scythe-Sot0f3hQQ4Y-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": [
-            {
-                "name": "John doe",
-                "review": "Bad image! don't buy it. Waste of money",
-                "date": "18-11-2002",
-                "rating":2
-            },
-            {
-                "name": "Jane doe",
-                "review": "Nice image! #Satisfied",
-                "date": "23-4-1994",
-                "rating": 5
-            },
-            {
-                "name" : "Grandpa max",
-                "review" : "This is not a real omintrix!",
-                "date": "1-1-1994",
-                "rating": 1
-            }
-        ]
-
-    },
-    {
-        "category" : "Robots All",
-        "name": "Asimo robot",
-        "price": 4,
-        "photographer": "Franck",
-        "color":["Robots","Asimo robot"],
-        "id" : 8,
-        "img_src": "/Images/franck-v-g29arbbvPjo-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": []
-
-    },
-    {
-        "category" : "Cafe All",
-        "name": "Cafe with brown chairs",
-        "price": 9,
-        "photographer": "Drew coffman",
-        "color":["cafe"],
-        "id" : 9,
-        "img_src": "/Images/drew-coffman-jUOaONoXJQk-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": []
-
-    },
-    {
-        "category" : "City All",
-        "name": "Empire state building",
-        "price": 9,
-        "photographer": "Alina Grubnyak",
-        "color":["City","Empire state building","evening","City-evening"],
-        "id" : 10,
-        "img_src": "/Images/alina-grubnyak-OzIk9PW0g50-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": []
-
-    },
-  {
-        "category" : "City All",
-        "name" : "Seattle at night",
-        "price": 4,
-        "photographer": "David Kokainis",
-        "color": ["night photography","Cityscape","seattle in rain","Seattle","favourite place"],
-        "id" : 11,
-        "img_src": "/Images/davids-kokainis-0S752AxAc4E-unsplash.jpg",
-        "in_cart": false, 
-        "filtered": true,
-        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit consequuntur ad minus nesciunt autem amet itaque placeat totam fugiat doloribus eligendi rem, dolorum mollitia ducimus maxime voluptas aspernatur fugit?",
-        "Review": []
-
     }
-]
+     
