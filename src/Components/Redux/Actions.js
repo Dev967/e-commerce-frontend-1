@@ -1,6 +1,6 @@
 import * as Actions from './ActionTypes';
 import MyStore from './MyStore';
-export const baseURL = "http://localhost:3001/";
+export const baseURL = "https://api.jsonbin.io/b/5ecd1f0c3beeed0a3f1a702f/";
 
 
 export const fetchData = () => dispatch => {
