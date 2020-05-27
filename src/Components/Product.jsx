@@ -5,7 +5,8 @@ import { Col, Row, Card, Badge, Button } from 'react-bootstrap';
 import { modify } from './Redux/Actions';
 import { connect } from 'react-redux';
 import { baseURL } from "./Redux/Actions";
-import "../../node_modules/font-awesome/css/font-awesome.css";
+import "font-awesome/css/font-awesome.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const mapDispatchToProps = dispatch => {

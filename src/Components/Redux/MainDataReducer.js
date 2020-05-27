@@ -1,4 +1,3 @@
-import DATA from '../Assets/HomeProducts';
 import * as Actions from "./ActionTypes.js";
 
 export const addData = (state = { isLoading: true, errMess: "" }, action) => {
