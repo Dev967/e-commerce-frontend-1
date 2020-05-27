@@ -4,7 +4,7 @@ import React from 'react';
 import { Modal, Badge, Button, Row } from 'react-bootstrap';
 
 import { ReviewComponent } from './ReviewComponent';
-
+import {FaShoppingCart, FaWindowClose} from 'react-icons/fa';
 
 class MyModal extends React.Component {
   render() {
@@ -30,9 +30,8 @@ class MyModal extends React.Component {
             {this.props.contentAll.value.desc}
           </p>
           <Row className="">
-            <Button className="ml-3 mb-2" variant="success" onClick={() => { this.props.modify(this.props.contentAll.value); this.props.onUpdateCartState() }}><i className="fa fa-shopping-cart fa-lg mr-2" /> {this.props.inCart}</Button>
-            <Button className="mx-2 mb-2" onClick={this.props.contentOnHide}><i className="fa fa-close fa-g mr-2" />Close</Button>
-            <Button className="mb-2 btn-secondary" onClick={() => { this.props.toggleReviewModal(); this.props.contentOnHide() }}><i className="fa fa-pencil fa-lg mr-2" />Add Review</Button>
+            <Button className="ml-3 mb-2" variant="success" onClick={() => { this.props.modify(this.props.contentAll.value); this.props.onUpdateCartState() }}><FaShoppingCart className="mr-2"/> {this.props.inCart}</Button>
+            <Button className="mx-2 mb-2" onClick={this.props.contentOnHide}><FaWindowClose className="mr-2"/>Close</Button>
           </Row>
           <h3>Reviews: </h3>
           <hr />

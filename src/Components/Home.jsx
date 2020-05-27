@@ -19,6 +19,7 @@ import Product from './Product';
 import { MyToast } from './CartNotification';
 import { setSelected, modify, setCount } from './Redux/Actions';
 
+
 const mapDispatchToProps = dispatch => ({
     set_selected: (s) => dispatch(setSelected(s)),
     modifyData: (s) => dispatch(modify(s))

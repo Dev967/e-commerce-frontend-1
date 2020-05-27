@@ -22,6 +22,9 @@ import ErrorMsg from './Error';
 import { connect } from 'react-redux';
 import { fetchData } from './Redux/Actions';
 
+//Icons
+import {FaShoppingCart, FaInfo, FaHome} from 'react-icons/fa';
+
 const mapStateToProps = state => ({
     count: state.Cart.count,
     isLoading: state.MainData.isLoading,
@@ -38,16 +41,16 @@ class MyNavbar extends React.Component {
                 <Navbar.Brand >
                     <NavLink to="/Component2">
                         <Row>
-                            <i className="fa fa-shopping-cart fa-lg mr-1 grey" /><h5 className="count"><Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></h5>
+                           <FaShoppingCart color="white" className="mr-1"/><h5 className="count"><Badge variant="danger" className="ml-1 text-center">{this.props.no}</Badge></h5>
                         </Row>
                     </NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <NavLink key="1" className="mx-2 text-white" to="/"><i className="fa fa-home fa-lg mr-1"></i>Home</NavLink>
-                        <NavLink key="3" className="mx-2 text-white" to="/Component3"><i className="fa fa-info-circle fa-lg mr-1"></i>About</NavLink>
-                        <NavLink key="2" className="mx-2 text-white" to="/Component2"><i className="fa fa-shopping-cart fa-lg mr-1"></i>Cart</NavLink>
+                        <NavLink key="1" className="mx-2 text-white" to="/"><FaHome className="mr-1"/>Home</NavLink>
+                        <NavLink key="3" className="mx-2 text-white" to="/Component3"><FaInfo className="mr-1"/>About</NavLink>
+                        <NavLink key="2" className="mx-2 text-white" to="/Component2"><FaShoppingCart className="mr-1" />Cart</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

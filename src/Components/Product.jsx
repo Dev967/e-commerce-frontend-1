@@ -5,9 +5,10 @@ import { Col, Row, Card, Badge, Button } from 'react-bootstrap';
 import { modify } from './Redux/Actions';
 import { connect } from 'react-redux';
 import { baseURL } from "./Redux/Actions";
-import "font-awesome/css/font-awesome.css";
+// import "./Assets/font-awesome.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { FaStar, FaRegStar, FaInfo, FaCartArrowDown, FaTag } from 'react-icons/fa';
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -81,8 +82,8 @@ class Product extends React.Component {
             })
         }
         return printAr.map(e => {
-            if (e) return <i className="fa fa-star fa-lg mr-1 mb-2 rated" />
-            else return <i className="fa fa-star-o fa-lg mr-1 mb-2 empty-rated" />
+            if (e) return /*<i className="fa fa-star fa-lg mr-1 mb-2 rated" />*/ <FaStar color="yellow" className="rated mr-1 mb-2 " />
+            else return /*<i className="fa fa-star-o fa-lg mr-1 mb-2 empty-rated" />*/ <FaRegStar color="yellow" className="empty-rated mr-1 mb-2"/>
         })
     }
     render() {
@@ -97,7 +98,7 @@ class Product extends React.Component {
                             <Col>
                                 <h5>
                                     <Badge className="float-right" variant="warning">
-                                        <span className="fa fa-tag fa-large mr-1"></span>$
+                                        <FaTag className="mr-1"/>$
                    {this.props.value.price}
                                     </Badge>
                                 </h5>
@@ -112,8 +113,8 @@ class Product extends React.Component {
                         )}
                         <Row className="mt-2">
                             <Col>
-                                <Button variant="danger" className="mr-2" onClick={this.modalSetShow}><i className="fa fa-info-circle fa-large mr-1"></i>More</Button>
-                                <Button variant="info" onClick={() => {/*this.props.callParent(this.props.value);*/ this.addInCart(this.props.value); this.toggleToast(); this.update_cart_state() }}><i className="fa fa-shopping-cart fa-lg mr-1"></i>{this.state.cart_state}</Button>
+                                <Button variant="danger" className="mr-2" onClick={this.modalSetShow}><FaInfo className="mr-1"/>More</Button>
+                                <Button variant="info" onClick={() => {/*this.props.callParent(this.props.value);*/ this.addInCart(this.props.value); this.toggleToast(); this.update_cart_state() }}><FaCartArrowDown className="mr-1"/>{this.state.cart_state}</Button>
                             </Col>
                         </Row>
                     </Card.Body>

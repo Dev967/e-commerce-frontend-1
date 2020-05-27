@@ -3,7 +3,7 @@ import React from 'react';
 //Bootstrap
 import { Container, Row, Col } from 'react-bootstrap';
 import { baseURL } from "./Redux/Actions";
-
+import {FaStar, FaRegStar} from "react-icons/fa";
 
 export const ReviewComponent = (props) => {
     let printArr = [false, false, false, false, false];
@@ -31,8 +31,8 @@ export const ReviewComponent = (props) => {
                     <Row>
                         {
                             printArr.map(e => {
-                                if (e) return <i className="fa fa-lg fa-star mb-2 mr-1 rated" />
-                                else return <i className="fa fa-lg fa-star-o mb-2 mr-1 empty-rated" />
+                                if (e) return <FaStar className="mb-2 mr-1 rated" color="yellow"/>
+                                else return <FaRegStar className="mb-2 mr-1 empty-rated" color="yellow"/>
                             })
                         }
                     </Row>
