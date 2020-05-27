@@ -2,7 +2,6 @@ import React from 'react';
 
 //Bootstrap
 import { Container, Row, Col } from 'react-bootstrap';
-import { baseURL } from "./Redux/Actions";
 import {FaStar, FaRegStar} from "react-icons/fa";
 
 export const ReviewComponent = (props) => {
@@ -19,7 +18,7 @@ export const ReviewComponent = (props) => {
             <hr />
             <Row>
                 <Col xs="2" >
-                    <img className="img" src={baseURL + "/about.jpeg"} height="70" width="70" />
+                    <img className="img" src={"/about.jpeg"} height="70" width="70" />
                 </Col>
                 <Col>
                     <Row>

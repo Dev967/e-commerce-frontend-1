@@ -60,7 +60,6 @@ class MyNavbar extends React.Component {
 
 class MainComponent extends React.Component {
     componentDidMount() {
-        console.log("Component mounted");
         this.props.fetch();
     }
 

@@ -1,26 +1,35 @@
 import * as Actions from './ActionTypes';
-import MyStore from './MyStore';
- export const baseURL = "https://api.jsonbin.io/b/5ecd1f0c3beeed0a3f1a702f/";
+import Data from "../Assets/HomeProducts";
+// export const baseURL = "https://api.jsonbin.io/b/5ece2154a2a6e10f7bc6be1b/";
+// export const baseURL = "/HomeProducts.json";
 //export const baseURL = "http://localhost:3001/";
 
 
 export const fetchData = () => dispatch => {
-    fetch(baseURL + "MainData")
-        .then(res => res.json())
-        .then(r => dispatch({
-            type: Actions.MODIFY,
-            payload: {
-                errMess: "",
-                data: r
-            }
-        }))
-        .catch(e => dispatch({
-            type: Actions.MODIFY,
-            payload: {
-                data: null,
-                errMess: "Network Error Try again later."
-            }
-        }));
+    dispatch({
+        type:Actions.MODIFY,
+        payload:{
+            errMess: "",
+            data: Data.MainData
+        }
+    })
+    // fetch(baseURL + "MainData")
+    //     .then(res => res.json())
+    //     .then(res => console.log(res.MainData))
+    //     .then(r => dispatch({
+    //         type: Actions.MODIFY,
+    //         payload: {
+    //             errMess: "",
+    //             data: r
+    //         }
+    //     }))
+        // .catch(e => dispatch({
+        //     type: Actions.MODIFY,
+        //     payload: {
+        //         data: null,
+        //         errMess: "Network Error Try again later."
+        //     }
+        // }));
 }
 
 export const modify = c => dispatch => {
